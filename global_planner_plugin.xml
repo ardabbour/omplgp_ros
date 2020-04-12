@@ -1,0 +1,5 @@
+<library path="omplgp_ros">
+  <class name="omplgp_ros/OMPL2DPlannerROS" type="omplgp_ros::OMPL2DPlannerROS" base_class_type="nav2_core::GlobalPlanner">
+    <description>Navigation plugin for the OMPL Global Planner</description>
+  </class>
+</library>

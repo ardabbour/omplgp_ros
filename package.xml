@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema" ?>
+<package format="3">
+  <name>omplgp_ros</name>
+  <version>0.1.0</version>
+  <description>Navigation plugin for the OMPL Global Planner</description>
+  <maintainer email="ardabbour@gmail.com">Abdul Rahman Dabbour</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>geometry_msgs</depend>
+  <depend>nav2_core</depend>
+  <depend>nav2_costmap_2d</depend>
+  <depend>nav2_util</depend>
+  <depend>nav_msgs</depend>
+  <!-- Need to have a ROS GPG key for this -->
+  <!-- <depend>omplgp</depend> -->
+  <depend>pluginlib</depend>
+  <depend>rclcpp</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <nav2_core plugin="${prefix}/global_planner_plugin.xml" />
+  </export>
+</package>
